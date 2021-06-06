@@ -1,0 +1,182 @@
+{
+   "name": "ipstack",
+   "author": "z1p",
+   "version": 0.1,
+   "categories": [],
+   "description": "",
+   "icon": null,
+   "requirements": {
+      "jimi_min_version": null,
+      "jimi_max_version": null,
+      "plugins": []
+   },
+   "collections": {},
+   "triggers": {},
+   "actions": {
+      "ipstackIPLookup": {
+         "display_name": "ipstackIPLookup",
+         "className": "_ipstackIPLookup",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "ip",
+               "schema_value": "ip",
+               "type": "input",
+               "label": "ip",
+               "description": ""
+            },
+            {
+               "schema_item": "fields",
+               "schema_value": "fields",
+               "type": "json-input",
+               "label": "fields",
+               "description": ""
+            },
+            {
+               "schema_item": "includeHostname",
+               "schema_value": "includeHostname",
+               "type": "input",
+               "label": "includeHostname",
+               "description": ""
+            },
+            {
+               "schema_item": "includeSecurity",
+               "schema_value": "includeSecurity",
+               "type": "input",
+               "label": "includeSecurity",
+               "description": ""
+            },
+            {
+               "schema_item": "secure",
+               "schema_value": "secure",
+               "type": "input",
+               "label": "secure",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "ip",
+               "schema_value": "ip",
+               "type": "input",
+               "label": "ip",
+               "description": ""
+            },
+            {
+               "schema_item": "result, statusCode",
+               "schema_value": "result, statusCode",
+               "type": "input",
+               "label": "result, statusCode",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      },
+      "ipstackMyIP": {
+         "display_name": "ipstackMyIP",
+         "className": "_ipstackMyIP",
+         "class_location": "models.action",
+         "description": "",
+         "fields": [
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "secure",
+               "schema_value": "secure",
+               "type": "input",
+               "label": "secure",
+               "description": ""
+            },
+            {
+               "schema_item": "apiToken",
+               "schema_value": "apiToken",
+               "type": "input",
+               "label": "apiToken",
+               "description": ""
+            },
+            {
+               "schema_item": "ip",
+               "schema_value": "ip",
+               "type": "input",
+               "label": "ip",
+               "description": ""
+            },
+            {
+               "schema_item": "result, statusCode",
+               "schema_value": "result, statusCode",
+               "type": "input",
+               "label": "result, statusCode",
+               "description": ""
+            }
+         ],
+         "data_out": {
+            "result": {
+               "description": "Returns True when successful.",
+               "type": "boolean",
+               "always_present": true,
+               "values": {
+                  "True": {
+                     "description": "Successful."
+                  },
+                  "False": {
+                     "description": "Failure."
+                  }
+               }
+            },
+            "rc": {
+               "description": "Returns the exit code for the action.",
+               "type": "number",
+               "always_present": true,
+               "values": {
+                  "0": {
+                     "description": "Successful."
+                  }
+               }
+            }
+         }
+      }
+   },
+   "settings": {}
+}
